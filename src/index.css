@@ -32,6 +32,13 @@
 }
 
 /* Custom Reset */
+#root {
+  all: unset;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -59,6 +66,8 @@ html {
 body {
   background-color: #fefefc;
   color: black;
+  margin: 0;
+  padding: 0;
 }
 
 a {

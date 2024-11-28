@@ -9,7 +9,7 @@ function App() {
     <div className="app">
       <Navbar />
       <ScrollToTop />
-      <main>
+      <main className="pt-20">
         <Outlet />
       </main>
       <Footer />

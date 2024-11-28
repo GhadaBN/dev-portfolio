@@ -12,6 +12,18 @@ export default {
         book: 600,
         bold: 700,
       },
+      fontSize: {
+        "7.5xl": "5.5rem",
+      },
+      lineHeight: {
+        "tight-0.9": "0.9",
+      },
+      colors: {
+        customRed: "#FC0230",
+      },
+      spacing: {
+        17: "4.1rem",
+      },
     },
   },
   plugins: [],
