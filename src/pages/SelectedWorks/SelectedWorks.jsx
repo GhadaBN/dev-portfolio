@@ -6,7 +6,7 @@ import projects from "../../assets/projectsData.json";
 
 const SelectedWorks = () => {
   return (
-    <div className="selected-works-page-wrapper relative h-[80vh]">
+    <div className="selected-works-page-wrapper relative h-[calc(90vh-9vh)] overflow-hidden">
       <div className="absolute bottom-4 left-4 sm:left-0 md:bottom-4 md:left-4 lg:left-6 flex flex-col items-start text-left w-[90vw]">
         {projects.map((project) => (
           <div
