@@ -4,6 +4,20 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Sohne";
+  src: url("./assets/fonts/Sohne-Dreiviertelfett.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sohne";
+  src: url("./assets/fonts/Sohne-Fett.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "SohneBreit";
   src: url("./assets/fonts/SohneBreit-Leicht.otf") format("opentype");
   font-weight: 200;
