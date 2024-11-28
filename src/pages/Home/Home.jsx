@@ -1,8 +1,11 @@
 import React from "react";
+import Header from "../../components/Header/Header";
 
 const Home = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center"></div>
+    <div className="relative h-[80vh]">
+      <Header />
+    </div>
   );
 };
 
