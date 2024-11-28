@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import NotFound from "./pages/NotFound/NotFound.jsx";
 import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/About.jsx";
+import SelectedWorks from "./pages/SelectedWorks/SelectedWorks.jsx";
 import Project from "./pages/Project/Project.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="selected-works" element={<SelectedWorks />} />
         <Route path="projects/:projectId" element={<Project />} />
         <Route path="contact" element={<Contact />} />
       </Route>
