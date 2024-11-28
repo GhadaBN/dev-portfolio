@@ -1,0 +1,91 @@
+[
+  {
+    "id": "wallet-app",
+    "title": "Mobile Wallet App",
+    "type": ["Web Development"],
+    "description": [
+      "Developed using React Native for mobile interface development, the app allows users to scroll through their stack of cards, simulating a smooth and interactive experience inspired by the original Apple Wallet. It demonstrates the integration of animated interactions and gesture handling to create a polished and engaging user experience."
+    ],
+    "technology": [
+      "React Native: Used for building the cross-platform mobile application with a focus on performance and native-like UI experience.",
+      "Reanimated: Enables smooth animations and interactions, providing fluid, natural movement for the card-swiping and scrolling effects.",
+      "Gesture Handler: Simplifies touch interactions like swiping and scrolling without performance loss."
+    ],
+    "projectboards": [{ "type": "video", "src": "/wallet_app_cover.mp4" }]
+  },
+
+  {
+    "id": "tomato-social-club",
+    "title": "Tomato Social Club",
+    "type": ["Web Development"],
+    "description": [
+      "Tomato Social Club is a fullstack Web-first application for food delivery built using the MERN stack. This platform provides a seamless and intuitive experience for customers. With integrated Stripe payment processing, Tomato Social Club ensures secure and efficient transactions."
+    ],
+    "technology": [
+      "React.js: Builds the interactive and responsive user interface.",
+      "Node.js: Serves as the runtime environment for executing server-side code.",
+      "Express.js: Handles routing, middleware, and server logic.",
+      "MongoDB: Utilized as the NoSQL database to store user, restaurant, and order data.",
+      "Stripe API: Payment Integration with Stripe API facilitates secure and efficient payment processing for transactions on the platform."
+    ],
+    "demo": ["https://tomato-social-frontend.onrender.com/"],
+    "projectboards": [
+      { "type": "video", "src": "/tomato_social_video.mp4" },
+      { "type": "image", "src": "/tomato_01.png" },
+      { "type": "image", "src": "/tomato_02.png" }
+    ]
+  },
+
+  {
+    "id": "pour-decisions",
+    "title": "Pour Decisions",
+    "type": ["Web Development"],
+    "description": [
+      "Pour Decisions is a cocktail recipes application built using React.js. With a focus on user-generated content, this application allows you to add your own recipes which you can save to your cocktail collection. The user can also browse through a prexisting collection of recipes. "
+    ],
+    "technology": [
+      "React.js: Provides a dynamic and responsive user interface, allowing for smooth interactions and updates.",
+      "In-Browser Storage: User-generated recipes and application data are stored temporarily in the browser. Data will be lost upon refreshing the page."
+    ],
+    "coverProject": [
+      {
+        "type": "image",
+        "src": "/pour_decisions_screen.png"
+      }
+    ],
+
+    "demo": ["https://pour-decisions.netlify.app/"]
+  },
+  {
+    "id": "fluffy-dog",
+    "title": "Fluffy Dog",
+    "type": ["Web Development"],
+    "description": [
+      "Fluffy Dog is a 2D game web application developed using DOM manipulation techniques and vanilla Javascript. Inspired by the classic Flappy Bird, this game brings a delightful twist with a charming canine protagonist. In Fluffy Dog, players guide the dog through a series of obstacles, aiming to achieve the highest score possible."
+    ],
+
+    "technology": [
+      "HTML5: Structures the game's content and elements.",
+      "CSS3: Styles the game, enhancing visual appeal and responsiveness.",
+      "JavaScript: Powers the game's logic and interactivity through DOM manipulation."
+    ],
+    "demo": ["https://fluffy-dog-game.netlify.app/"],
+    "projectboards": [{ "type": "image", "src": "/fluffy_dog_1.png" }]
+  },
+  {
+    "id": "dev-roast",
+    "title": "Dev Roast",
+    "type": ["Web Development", "Technology Stack"],
+    "description": [
+      "Dev Roast is an interactive web-first application game survey. It combines the power of React.js, Tailwind CSS, and a dynamic JSON server to deliver a seamless quiz experience."
+    ],
+    "technology": [
+      "React.js: Provides a dynamic user interface, allowing for smooth interactions and updates. The application executes full CRUD operations through React components.",
+      "JSON Server: Serves as a lightweight backend, managing and updating questions and user data, which enables the application to handle CRUD operations seamlessly.",
+      "Axios: Used for making HTTP requests to the JSON server, enabling efficient data retrieval and updates."
+    ],
+
+    "demo": ["https://dev-roast.netlify.app/"],
+    "projectboards": [{ "type": "video", "src": "/dev_roast_video.mov" }]
+  }
+]
