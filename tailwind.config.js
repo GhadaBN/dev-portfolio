@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sohne: ["SohneBreit", "sans-serif"],
+        sohne: ["Sohne", "sans-serif"],
+        sohneBreit: ["SohneBreit", "sans-serif"],
       },
       fontWeight: {
         light: 200,
@@ -13,13 +14,15 @@ export default {
         bold: 700,
       },
       fontSize: {
-        "7.5xl": "5.5rem",
+        customXl: "6.5rem",
+        customSm: "1rem",
       },
       lineHeight: {
-        "tight-0.9": "0.9",
+        "tight-0.9": "0.82",
       },
       colors: {
         customRed: "#FC0230",
+        customBeige: "#EAE4D3",
       },
       spacing: {
         17: "4.1rem",

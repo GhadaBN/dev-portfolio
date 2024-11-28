@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="absolute left-1/2 transform -translate-x-1/2">
           <Link
             to="/"
-            className="nav-link uppercase font-sohne text-black font-semibold text-sm"
+            className="nav-link uppercase font-sohneBreit text-black font-semibold text-sm"
           >
             selected works
           </Link>
@@ -24,13 +24,13 @@ const Navbar = () => {
         <div className="flex space-x-8">
           <Link
             to="/about"
-            className="nav-link uppercase font-sohne text-black font-semibold text-sm"
+            className="nav-link uppercase font-sohneBreit text-black font-semibold text-sm"
           >
             About
           </Link>
           <Link
             to="/contact"
-            className="nav-link uppercase font-sohne text-black font-semibold text-sm"
+            className="nav-link uppercase font-sohneBreit text-black font-semibold text-sm"
           >
             Contact
           </Link>
