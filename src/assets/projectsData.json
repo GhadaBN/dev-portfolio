@@ -1,20 +1,5 @@
 [
   {
-    "id": "wallet-app",
-    "title": "Mobile Wallet App",
-    "type": ["Web Development"],
-    "description": [
-      "Developed using React Native for mobile interface development, the app allows users to scroll through their stack of cards, simulating a smooth and interactive experience inspired by the original Apple Wallet. It demonstrates the integration of animated interactions and gesture handling to create a polished and engaging user experience."
-    ],
-    "technology": [
-      "React Native: Used for building the cross-platform mobile application with a focus on performance and native-like UI experience.",
-      "Reanimated: Enables smooth animations and interactions, providing fluid, natural movement for the card-swiping and scrolling effects.",
-      "Gesture Handler: Simplifies touch interactions like swiping and scrolling without performance loss."
-    ],
-    "projectboards": [{ "type": "video", "src": "/wallet_app_cover.mp4" }]
-  },
-
-  {
     "id": "tomato-social-club",
     "title": "Tomato Social Club",
     "type": ["Web Development"],
@@ -34,6 +19,36 @@
       { "type": "image", "src": "/tomato_01.png" },
       { "type": "image", "src": "/tomato_02.png" }
     ]
+  },
+  {
+    "id": "wallet-app",
+    "title": "Mobile Wallet App",
+    "type": ["Web Development"],
+    "description": [
+      "Developed using React Native for mobile interface development, the app allows users to scroll through their stack of cards, simulating a smooth and interactive experience inspired by the original Apple Wallet. It demonstrates the integration of animated interactions and gesture handling to create a polished and engaging user experience."
+    ],
+    "technology": [
+      "React Native: Used for building the cross-platform mobile application with a focus on performance and native-like UI experience.",
+      "Reanimated: Enables smooth animations and interactions, providing fluid, natural movement for the card-swiping and scrolling effects.",
+      "Gesture Handler: Simplifies touch interactions like swiping and scrolling without performance loss."
+    ],
+    "projectboards": [{ "type": "video", "src": "/wallet_app_cover.mp4" }]
+  },
+  {
+    "id": "dev-roast",
+    "title": "Dev Roast",
+    "type": ["Web Development", "Technology Stack"],
+    "description": [
+      "Dev Roast is an interactive web-first application game survey. It combines the power of React.js, Tailwind CSS, and a dynamic JSON server to deliver a seamless quiz experience."
+    ],
+    "technology": [
+      "React.js: Provides a dynamic user interface, allowing for smooth interactions and updates. The application executes full CRUD operations through React components.",
+      "JSON Server: Serves as a lightweight backend, managing and updating questions and user data, which enables the application to handle CRUD operations seamlessly.",
+      "Axios: Used for making HTTP requests to the JSON server, enabling efficient data retrieval and updates."
+    ],
+
+    "demo": ["https://dev-roast.netlify.app/"],
+    "projectboards": [{ "type": "video", "src": "/dev_roast_video.mov" }]
   },
 
   {
@@ -71,21 +86,5 @@
     ],
     "demo": ["https://fluffy-dog-game.netlify.app/"],
     "projectboards": [{ "type": "image", "src": "/fluffy_dog_1.png" }]
-  },
-  {
-    "id": "dev-roast",
-    "title": "Dev Roast",
-    "type": ["Web Development", "Technology Stack"],
-    "description": [
-      "Dev Roast is an interactive web-first application game survey. It combines the power of React.js, Tailwind CSS, and a dynamic JSON server to deliver a seamless quiz experience."
-    ],
-    "technology": [
-      "React.js: Provides a dynamic user interface, allowing for smooth interactions and updates. The application executes full CRUD operations through React components.",
-      "JSON Server: Serves as a lightweight backend, managing and updating questions and user data, which enables the application to handle CRUD operations seamlessly.",
-      "Axios: Used for making HTTP requests to the JSON server, enabling efficient data retrieval and updates."
-    ],
-
-    "demo": ["https://dev-roast.netlify.app/"],
-    "projectboards": [{ "type": "video", "src": "/dev_roast_video.mov" }]
   }
 ]
