@@ -22,8 +22,10 @@ const Header = () => {
       </div>
 
       <div className="relative text-4xl md:text-customXl font-sohne font-book leading-tight-0.9 uppercase whitespace-nowrap flex items-center space-x-2">
-        <Link
-          to="/about"
+        <a
+          href={"https://github.com/GhadaBN"}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center space-x-1 group ml-2 relative -top-5"
         >
           <span className="font-sohneBreit font-semibold text-customSm uppercase">
@@ -33,7 +35,7 @@ const Header = () => {
             {" "}
             <FiArrowUpRight className="text-black group-hover:text-white h-3 w-3" />
           </span>
-        </Link>
+        </a>
 
         <span>CREATIVE DEVELOPER</span>
       </div>
