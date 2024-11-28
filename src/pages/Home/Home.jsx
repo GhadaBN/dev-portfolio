@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 
 const Home = () => {
   return (
-    <div className="relative h-[80vh]">
+    <div className="relative h-[calc(90vh-9vh)] overflow-hidden">
       <Header />
     </div>
   );

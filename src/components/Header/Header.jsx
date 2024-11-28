@@ -5,7 +5,7 @@ import { assets } from "../../assets/assets";
 
 const Header = () => {
   return (
-    <header className="absolute bottom-4 left-4 sm:left-0 md:bottom-4 md:left-4 lg:left-6 flex flex-col items-start text-left w-[90vw]">
+    <header className="absolute left-4 sm:left-0 md:bottom-8 md:left-4 lg:left-6 w-[90vw]">
       <div className="relative text-4xl md:text-customXl font-sohne font-book leading-tight-0.9 uppercase whitespace-nowrap flex items-center space-x-2">
         <span>GHADA</span>
         <span
