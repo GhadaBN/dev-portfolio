@@ -8,14 +8,17 @@ const Header = () => {
     <header className="absolute bottom-4 left-4 sm:left-0 md:bottom-4 md:left-4 lg:left-6 flex flex-col items-start text-left w-[90vw]">
       <div className="relative text-4xl md:text-customXl font-sohne font-book leading-tight-0.9 uppercase whitespace-nowrap flex items-center space-x-2">
         <span>GHADA</span>
-        <span className="h-20 w-60 bg-customBeige inline-block"></span>
+        <span
+          className="w-60 bg-customBeige inline-block align-middle"
+          style={{ height: "10vh" }}
+        ></span>
         <span>BENNASR</span>
         <Link
           to="/about"
           className="flex items-center space-x-1 group relative -top-5"
         >
           <span className="h-4 w-4 rounded-full border border-black bg-customBeige group-hover:bg-customRed"></span>
-          <span className="font-sohneBreit font-semibold text-customSm uppercase ">
+          <span className="font-sohneBreit font-semibold text-customSm uppercase">
             About
           </span>
         </Link>
