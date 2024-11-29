@@ -14,7 +14,7 @@
       "Stripe API: Payment Integration with Stripe API facilitates secure and efficient payment processing for transactions on the platform."
     ],
     "demo": ["https://tomato-social-frontend.onrender.com/"],
-    "projectboards": [
+    "projectBoards": [
       { "type": "video", "src": "/tomato_social_video.mp4" },
       { "type": "image", "src": "/tomato_01.png" },
       { "type": "image", "src": "/tomato_02.png" }
@@ -32,7 +32,7 @@
       "Reanimated: Enables smooth animations and interactions, providing fluid, natural movement for the card-swiping and scrolling effects.",
       "Gesture Handler: Simplifies touch interactions like swiping and scrolling without performance loss."
     ],
-    "projectboards": [{ "type": "video", "src": "/wallet_app_cover.mp4" }]
+    "projectBoards": [{ "type": "video", "src": "/wallet_app_cover.mp4" }]
   },
   {
     "id": "dev-roast",
@@ -48,7 +48,7 @@
     ],
 
     "demo": ["https://dev-roast.netlify.app/"],
-    "projectboards": [{ "type": "video", "src": "/dev_roast_video.mov" }]
+    "projectBoards": [{ "type": "video", "src": "/dev_roast_video.mov" }]
   },
 
   {
@@ -62,12 +62,8 @@
       "React.js: Provides a dynamic and responsive user interface, allowing for smooth interactions and updates.",
       "In-Browser Storage: User-generated recipes and application data are stored temporarily in the browser. Data will be lost upon refreshing the page."
     ],
-    "coverProject": [
-      {
-        "type": "image",
-        "src": "/pour_decisions_screen.png"
-      }
-    ],
+
+    "projectBoards": [{ "type": "image", "src": "/pour_decisions_screen.png" }],
 
     "demo": ["https://pour-decisions.netlify.app/"]
   },
@@ -85,6 +81,6 @@
       "JavaScript: Powers the game's logic and interactivity through DOM manipulation."
     ],
     "demo": ["https://fluffy-dog-game.netlify.app/"],
-    "projectboards": [{ "type": "image", "src": "/fluffy_dog_1.png" }]
+    "projectBoards": [{ "type": "image", "src": "/fluffy_dog_1.png" }]
   }
 ]
