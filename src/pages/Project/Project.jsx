@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import projects from "../../assets/projectsData.json";
+import ProjectHeader from "../../components/ProjectHeader";
 import Boards from "../../components/Boards";
 const Project = () => {
   const { projectId } = useParams();
@@ -12,15 +13,8 @@ const Project = () => {
   }
 
   return (
-    <div style={{ padding: "2rem", maxWidth: "85vw", margin: "0 auto" }}>
-      <h1 style={{ marginBottom: "1rem" }}>{project.title}</h1>
-      <div>
-        {project.description.map((desc, index) => (
-          <p key={index} style={{ marginBottom: "1rem" }}>
-            {desc}
-          </p>
-        ))}
-      </div>
+    <div classeName="my-8">
+      <ProjectHeader title={project.title} description={project.description} />
       <Boards projectBoards={project.projectBoards} />
     </div>
   );

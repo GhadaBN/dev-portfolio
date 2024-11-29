@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
-import { assets } from "../../assets/assets";
+import { assets } from "../assets/assets";
 
 const Header = () => {
   return (
