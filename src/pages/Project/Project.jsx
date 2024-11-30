@@ -14,7 +14,11 @@ const Project = () => {
 
   return (
     <div classeName="my-8">
-      <ProjectHeader title={project.title} description={project.description} />
+      <ProjectHeader
+        title={project.title}
+        description={project.description}
+        technology={project.technology}
+      />
       <Boards projectBoards={project.projectBoards} />
     </div>
   );
