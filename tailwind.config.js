@@ -23,6 +23,7 @@ export default {
       colors: {
         customRed: "#FC0230",
         customBeige: "#EAE4D3",
+        customBg: "#FBFBF6",
       },
       spacing: {
         17: "4.1rem",
