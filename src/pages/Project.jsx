@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import projects from "../../assets/projectsData.json";
-import ProjectHeader from "../../components/ProjectHeader";
-import Boards from "../../components/Boards";
+import projects from "../assets/projectsData.json";
+import ProjectHeader from "../components/ProjectHeader";
+import Boards from "../components/Boards";
 const Project = () => {
   const { projectId } = useParams();
 
