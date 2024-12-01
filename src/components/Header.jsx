@@ -42,7 +42,6 @@ const Header = () => {
 
         <span>CREATIVE DEVELOPER</span>
       </div>
-
       <div className="text-4xl md:text-customXl font-sohne leading-tight-0.9 font-book uppercase">
         <div className="flex items-center">
           <span className="relative text-customXl -top-3">+</span>

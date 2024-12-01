@@ -6,6 +6,7 @@ const Home = () => {
     <div className="relative h-[calc(90vh-9vh)] overflow-hidden">
       <Header />
     </div>
+    
   );
 };
 
