@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <div className="relative h-[90vh] overflow-hidden flex flex-col">
+    <div className="relative h-auto overflow-hidden flex flex-col">
       <div className="ml-6 mt-12 w-[90vw]">
         <div className="relative text-customLg font-sohne font-book leading-tight-0.9 uppercase whitespace-nowrap flex items-center space-x-2">
           <span>Have a project in mind?</span>
@@ -15,7 +15,7 @@ const Contact = () => {
           <span>drop me a line.</span>
         </div>
       </div>
-      <div className="flex justify-end items-center w-[90vw] mt-20 -ml-40 ">
+      <div className="flex justify-end items-center w-[80vw] mt-10 pr-5">
         <div className="flex mt-10 items-start space-x-10">
           <div className="font-sohneBreit font-normal text-customSm uppercase text-left">
             <span>Contact</span>
