@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth;
+}
+
 @font-face {
   font-family: "Sohne";
   src: url("./assets/fonts/Sohne-Dreiviertelfett.otf") format("opentype");
@@ -75,6 +79,7 @@ body {
 html {
   font-size: 100%;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 body {
