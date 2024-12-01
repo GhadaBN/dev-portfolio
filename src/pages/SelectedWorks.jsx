@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
-import { assets } from "../../assets/assets";
-import projects from "../../assets/projectsData.json";
+import { assets } from "../assets/assets";
+import projects from "../assets/projectsData.json";
 
 const SelectedWorks = () => {
   return (
