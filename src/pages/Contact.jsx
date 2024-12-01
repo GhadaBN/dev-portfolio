@@ -2,6 +2,13 @@ import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const Contact = () => {
+  const obfuscateEmail = () => {
+    const email = "contact.ghadabennasr[at]gmail[dot]com"
+      .replace("[at]", "@")
+      .replace("[dot]", ".");
+    window.location.href = `mailto:${email}`;
+  };
+
   return (
     <div className="relative h-auto overflow-hidden flex flex-col">
       <div className="ml-6 mt-12 w-[90vw]">
@@ -23,7 +30,7 @@ const Contact = () => {
           <div className="flex flex-col space-y-2">
             <div className="flex w-[8vw] justify-between items-center">
               <a
-                href={"https://github.com/GhadaBN"}
+                href={"https://www.linkedin.com/in/ghadabennasr/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between w-full group"
@@ -39,9 +46,8 @@ const Contact = () => {
 
             <div className="flex w-[8vw] justify-between items-center">
               <a
-                href={"https://github.com/GhadaBN"}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
+                onClick={obfuscateEmail}
                 className="flex items-center justify-between w-full group"
               >
                 <span className="font-sohneBreit font-normal text-customSm uppercase text-left">
