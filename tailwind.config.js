@@ -15,6 +15,8 @@ export default {
       },
       fontSize: {
         customXl: "6.5rem",
+        customLg: "6rem",
+        customS: "1.2rem",
         customSm: "1rem",
       },
       lineHeight: {
@@ -27,6 +29,9 @@ export default {
       },
       spacing: {
         17: "4.1rem",
+      },
+      letterSpacing: {
+        xTight: "-0.01em",
       },
     },
   },
