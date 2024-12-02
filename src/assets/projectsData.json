@@ -4,7 +4,7 @@
     "title": "Tomato Social Club",
     "type": ["Web Development"],
     "description": [
-      "Tomato Social Club is a fullstack Web-first application for food delivery built using the MERN stack. This platform provides a seamless and intuitive experience for customers. With integrated Stripe payment processing, Tomato Social Club ensures secure and efficient transactions."
+      "Fullstack Web-first application for food delivery built using the MERN stack. The platform provides a seamless and intuitive experience for customers. Integrated Stripe payment processing, ensures secure and efficient transactions."
     ],
     "technology": [
       "React.js: Builds the interactive and responsive user interface.",

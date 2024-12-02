@@ -17,7 +17,7 @@ const ProjectHeader = ({ title, description, technology, demo }) => {
           </h1>
         </div>
         <div className="w-[80%] flex space-x-10">
-          <div className="w-[35%]">
+          <div className="w-[30%]">
             <h2 className="text-customSm font-sohneBreit font-normal uppercase text-left border-b border-black px-2 py-2 mb-1 my-1">
               Technology Stack
             </h2>
@@ -27,7 +27,7 @@ const ProjectHeader = ({ title, description, technology, demo }) => {
                 return (
                   <div
                     key={index}
-                    className=" border-b border-black px-2 py-2 my-1"
+                    className=" border-b last:border-none border-black px-2 py-2 my-1"
                   >
                     <div
                       className="flex items-center justify-between cursor-pointer"
@@ -56,7 +56,7 @@ const ProjectHeader = ({ title, description, technology, demo }) => {
               })}
             </div>
           </div>
-          <div className="w-[35%]">
+          <div className="w-[50%]">
             {demo?.map((link, index) => (
               <div key={index} className="border-b border-black px-2 py-2 my-1">
                 <a

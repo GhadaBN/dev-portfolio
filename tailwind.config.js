@@ -20,7 +20,7 @@ export default {
         customSm: "1rem",
       },
       lineHeight: {
-        "tight-0.82": "0.82",
+        "x-tight": "0.82",
         "tight-0.9": "0.9",
       },
       colors: {
