@@ -16,69 +16,75 @@ const ProjectHeader = ({ title, description, technology, demo }) => {
             {title}
           </h1>
         </div>
-
-        <div className="w-[38%]">
-          {demo?.map((link, index) => (
-            <div key={index} className="border-b border-black px-2 py-2 my-1">
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between w-full group"
-              >
-                <h2 className="font-sohneBreit font-normal text-customSm uppercase text-left">
-                  Demo Website
-                </h2>
-                <span className="relative h-5 w-5 rounded-full border border-black bg-customBeige group-hover:bg-customRed flex items-center justify-center">
-                  <FiArrowUpRight className="text-black group-hover:text-white h-3 w-3" />
-                </span>
-              </a>
-            </div>
-          ))}
-          <h2 className="text-customSm font-sohneBreit font-normal uppercase text-left border-b border-black px-2 py-2 mb-1">
-            Project Information
-          </h2>
-
-          {description && (
-            <div className="text-customSm font-sohneBreit font-light text-left border-b border-black px-2 py-2 mb-1">
-              {description.map((desc, index) => (
-                <p key={index}>{desc}</p>
-              ))}
-            </div>
-          )}
-          <div>
-            {technology?.map((tech, index) => {
-              const [techTitle, techDescription] = tech.split(": ");
-              return (
-                <div
-                  key={index}
-                  className="border-b border-black px-2 py-2 my-1"
-                >
+        <div className="w-[80%] flex space-x-10">
+          <div className="w-[35%]">
+            <h2 className="text-customSm font-sohneBreit font-normal uppercase text-left border-b border-black px-2 py-2 mb-1 my-1">
+              Technology Stack
+            </h2>
+            <div>
+              {technology?.map((tech, index) => {
+                const [techTitle, techDescription] = tech.split(": ");
+                return (
                   <div
-                    className="flex items-center justify-between cursor-pointer"
-                    onClick={() => toggleAccordion(index)}
+                    key={index}
+                    className=" border-b border-black px-2 py-2 my-1"
                   >
-                    <p className="font-sohneBreit uppercase text-customSm font-normal text-left">
-                      {techTitle}
-                    </p>
-                    {openAccordion === index ? (
-                      <span className="relative h-5 w-5 rounded-full border border-black bg-customPink flex items-center justify-center">
-                        <FiMinus className="h-3 w-3" />
-                      </span>
-                    ) : (
-                      <span className="relative h-5 w-5 rounded-full border border-black bg-customBeige flex items-center justify-center">
-                        <FiPlus className="h-3 w-3" />
-                      </span>
+                    <div
+                      className="flex items-center justify-between cursor-pointer"
+                      onClick={() => toggleAccordion(index)}
+                    >
+                      <p className="font-sohneBreit uppercase text-customSm font-normal text-left">
+                        {techTitle}
+                      </p>
+                      {openAccordion === index ? (
+                        <span className="relative h-5 w-5 rounded-full border border-black bg-customPink flex items-center justify-center">
+                          <FiMinus className="h-3 w-3" />
+                        </span>
+                      ) : (
+                        <span className="relative h-5 w-5 rounded-full border border-black bg-customBeige flex items-center justify-center">
+                          <FiPlus className="h-3 w-3" />
+                        </span>
+                      )}
+                    </div>
+                    {openAccordion === index && (
+                      <p className="text-left text-customSm font-sohneBreit font-light">
+                        {techDescription}
+                      </p>
                     )}
                   </div>
-                  {openAccordion === index && (
-                    <p className="text-left text-customSm font-sohneBreit font-light">
-                      {techDescription}
-                    </p>
-                  )}
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+          </div>
+          <div className="w-[35%]">
+            {demo?.map((link, index) => (
+              <div key={index} className="border-b border-black px-2 py-2 my-1">
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between w-full group"
+                >
+                  <h2 className="font-sohneBreit font-normal text-customSm uppercase text-left">
+                    Demo Website
+                  </h2>
+                  <span className="relative h-5 w-5 rounded-full border border-black bg-customBeige group-hover:bg-customRed flex items-center justify-center">
+                    <FiArrowUpRight className="text-black group-hover:text-white h-3 w-3" />
+                  </span>
+                </a>
+              </div>
+            ))}
+            <h2 className="text-customSm font-sohneBreit font-normal uppercase text-left border-b border-black px-2 py-2 mb-1">
+              Project Information
+            </h2>
+
+            {description && (
+              <div className="text-customSm font-sohneBreit font-light text-left  px-2 py-2 mb-1">
+                {description.map((desc, index) => (
+                  <p key={index}>{desc}</p>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
