@@ -13,11 +13,12 @@ const Project = () => {
   }
 
   return (
-    <div classeName="my-8">
+    <div className="my-8">
       <ProjectHeader
         title={project.title}
         description={project.description}
         technology={project.technology}
+        demo={project.demo}
       />
       <Boards projectBoards={project.projectBoards} />
     </div>

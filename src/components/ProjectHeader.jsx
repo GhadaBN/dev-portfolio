@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { FiPlus, FiMinus } from "react-icons/fi";
+import { FiPlus, FiMinus, FiArrowUpRight } from "react-icons/fi";
 
-const ProjectHeader = ({ title, description, technology }) => {
+const ProjectHeader = ({ title, description, technology, demo }) => {
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -11,19 +11,36 @@ const ProjectHeader = ({ title, description, technology }) => {
   return (
     <div className="max-w-screen-lg my-16 mx-auto p-6">
       <div className="w-[80vw] mx-auto">
-        <div className="w-[60%]">
-          <h1 className="py-10 text-7xl font-sohne font-book leading-tight-0.9 uppercase text-left">
+        <div className="w-[60%] mt-6 mb-16">
+          <h1 className="text-left py-10 text-customXl font-sohne font-book leading-tight-0.9 uppercase">
             {title}
           </h1>
         </div>
 
-        <div className="w-[40%] bg-customBg border border-black">
-          <h2 className="text-lg font-sohneBreit font-semibold uppercase text-left border-b border-black px-4 py-2">
+        <div className="w-[38%]">
+          {demo?.map((link, index) => (
+            <div key={index} className="border-b border-black px-2 py-2 my-1">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between w-full group"
+              >
+                <h2 className="font-sohneBreit font-normal text-customSm uppercase text-left">
+                  Demo Website
+                </h2>
+                <span className="relative h-5 w-5 rounded-full border border-black bg-customBeige group-hover:bg-customRed flex items-center justify-center">
+                  <FiArrowUpRight className="text-black group-hover:text-white h-3 w-3" />
+                </span>
+              </a>
+            </div>
+          ))}
+          <h2 className="text-customSm font-sohneBreit font-normal uppercase text-left border-b border-black px-2 py-2 mb-1">
             Project Information
           </h2>
 
           {description && (
-            <div className="text-left border-b border-black px-4 py-2">
+            <div className="text-customSm font-sohneBreit font-light text-left border-b border-black px-2 py-2 mb-1">
               {description.map((desc, index) => (
                 <p key={index}>{desc}</p>
               ))}
@@ -35,23 +52,29 @@ const ProjectHeader = ({ title, description, technology }) => {
               return (
                 <div
                   key={index}
-                  className="border-b border-black px-4 py-2 last:border-none"
+                  className="border-b border-black px-2 py-2 my-1"
                 >
                   <div
-                    className="flex justify-between items-center cursor-pointer"
+                    className="flex items-center justify-between cursor-pointer"
                     onClick={() => toggleAccordion(index)}
                   >
-                    <p className="font-sohneBreit uppercase text-lg font-medium text-left">
+                    <p className="font-sohneBreit uppercase text-customSm font-normal text-left">
                       {techTitle}
                     </p>
                     {openAccordion === index ? (
-                      <FiMinus className="text-xl" />
+                      <span className="relative h-5 w-5 rounded-full border border-black bg-customPink flex items-center justify-center">
+                        <FiMinus className="h-3 w-3" />
+                      </span>
                     ) : (
-                      <FiPlus className="text-xl" />
+                      <span className="relative h-5 w-5 rounded-full border border-black bg-customBeige flex items-center justify-center">
+                        <FiPlus className="h-3 w-3" />
+                      </span>
                     )}
                   </div>
                   {openAccordion === index && (
-                    <p className="mt-2 text-left">{techDescription}</p>
+                    <p className="text-left text-customSm font-sohneBreit font-light">
+                      {techDescription}
+                    </p>
                   )}
                 </div>
               );
