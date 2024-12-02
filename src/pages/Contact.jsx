@@ -12,13 +12,13 @@ const Contact = () => {
   return (
     <div className="relative h-auto overflow-hidden flex flex-col">
       <div className="ml-6 mt-12 w-[90vw]">
-        <div className="relative text-customLg font-sohne font-book leading-tight-0.9 uppercase whitespace-nowrap flex items-center space-x-2">
+        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
           <span>Have a project in mind?</span>
         </div>
-        <div className="relative text-customLg font-sohne font-book leading-tight-0.9 uppercase whitespace-nowrap flex items-center space-x-2">
+        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
           <span>Or want to say hello,</span>
         </div>
-        <div className="relative text-customLg font-sohne font-book leading-tight-0.9 uppercase whitespace-nowrap flex items-center space-x-2">
+        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
           <span>drop me a line.</span>
         </div>
       </div>
