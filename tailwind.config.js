@@ -44,12 +44,43 @@ export default {
           "0%": { maxHeight: "500px", opacity: "1" },
           "100%": { maxHeight: "0", opacity: "0" },
         },
+        maskReveal: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        leftReveal: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
       },
       animation: {
         "accordion-open": "accordion-open 0.8s ease-in-out",
         "accordion-close": "accordion-close 0.8s ease-in-out",
+        maskReveal: "maskReveal 0.2s ease-out forwards",
+        leftReveal: "leftReveal 0.4s ease-out forwards",
+      },
+      animationDelay: {
+        100: "100ms",
+        200: "200ms",
+        300: "300ms",
+        400: "400ms",
+        500: "500ms",
+        600: "600ms",
+        700: "700ms",
+        800: "800ms",
+        900: "900ms",
+        1200: "1200ms",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities, theme, e }) {
+      const delays = theme("animationDelay");
+      const utilities = Object.entries(delays).reduce((acc, [key, value]) => {
+        acc[`.${e(`delay-${key}`)}`] = { "animation-delay": value };
+        return acc;
+      }, {});
+      addUtilities(utilities);
+    },
+  ],
 };
