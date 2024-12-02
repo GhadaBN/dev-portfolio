@@ -35,6 +35,20 @@ export default {
       letterSpacing: {
         xTight: "-0.01em",
       },
+      keyframes: {
+        "accordion-open": {
+          "0%": { maxHeight: "0", opacity: "0" },
+          "100%": { maxHeight: "500px", opacity: "1" },
+        },
+        "accordion-close": {
+          "0%": { maxHeight: "500px", opacity: "1" },
+          "100%": { maxHeight: "0", opacity: "0" },
+        },
+      },
+      animation: {
+        "accordion-open": "accordion-open 0.8s ease-in-out",
+        "accordion-close": "accordion-close 0.8s ease-in-out",
+      },
     },
   },
   plugins: [],
