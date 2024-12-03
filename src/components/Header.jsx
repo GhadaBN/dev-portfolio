@@ -6,13 +6,18 @@ import { assets } from "../assets/assets";
 const Header = () => {
   return (
     <header className="absolute bottom-8 left-8 w-[90vw]">
+
+
       <div className="relative text-customXl font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
+
         <div className="overflow-hidden">
           <span className="inline-block transform translate-y-full animate-maskReveal">
             GHADA
           </span>
         </div>
+
         <div className="overflow-hidden flex items-center justify-center">
+
           <span className="w-60 bg-customBeige h-19 transform translate-x-full animate-leftReveal"></span>
         </div>
         <div className="overflow-hidden">
@@ -74,7 +79,8 @@ const Header = () => {
           <img
             src={assets.mars_icon}
             alt="icon"
-            className="h-19 w-auto transform translate-y-full animate-maskReveal delay-1200"
+    className="h-19 w-auto transform translate-y-full animate-maskReveal delay-1200"
+
           />
         </div>
       </div>
