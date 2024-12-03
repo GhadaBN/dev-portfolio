@@ -12,8 +12,8 @@ const Header = () => {
             GHADA
           </span>
         </div>
-        <div className="overflow-hidden flex">
-          <span className="w-60 bg-customBeige inline-block align-middle h-[10vh] transform translate-x-full animate-leftReveal"></span>
+        <div className="overflow-hidden flex items-center justify-center">
+          <span className="w-60 bg-customBeige h-19 transform translate-x-full animate-leftReveal"></span>
         </div>
         <div className="overflow-hidden">
           <span className="inline-block transform translate-y-full animate-maskReveal delay-500">
@@ -74,7 +74,7 @@ const Header = () => {
           <img
             src={assets.mars_icon}
             alt="icon"
-            className="h-20 w-auto align-middle inline-block transform translate-y-full animate-maskReveal delay-800"
+            className="h-19 w-auto transform translate-y-full animate-maskReveal delay-1200"
           />
         </div>
       </div>
