@@ -7,28 +7,42 @@ import projects from "../assets/projectsData.json";
 const SelectedWorks = () => {
   return (
     <div className="selected-works-page-wrapper relative h-[calc(90vh-9vh)] overflow-hidden">
-      <div className="absolute bottom-12 left-8 flex flex-col items-start text-left w-[90vw]">
+      <div className="absolute bottom-12 left-8 flex flex-col items-start text-left w-[95vw]">
         {projects.map((project, index) => (
-          <div
-            key={project.id}
-            className="relative flex items-center space-x-2"
-          >
+          <div key={project.id} className="relative flex items-center">
             <Link
               to={`/projects/${project.id}`}
               className="group flex items-center relative"
             >
-              <div className="flex items-center group-hover:translate-x-8 transition-all duration-500 ease-out">
-                <span className="relative flex items-center justify-center transform -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-                  <FiArrowRight className="text-black h-6 w-6" />
-                </span>
+              <div className="flex items-center justify-between w-[90vw] ">
+                <div className="flex items-center group-hover:translate-x-14 transition-all duration-500 ease-out space-x-2">
+                  {/* Arrow */}
+                  <span className="relative flex items-center justify-center">
+                    <FiArrowRight className="text-black h-20 w-20 -ml-20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100" />
+                  </span>
 
-                <div className="overflow-hidden ml-2">
+                  {/* Project Title */}
                   <span
-                    className="inline-block transform translate-y-full animate-maskReveal transition-all duration-500 ease-out text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap"
+                    className="inline-block transform transition-all duration-500 ease-out text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {project.title}
                   </span>
+                </div>
+
+                {/* 01 Text and Icon */}
+                <div className="flex items-center relative">
+                  {/* 01 Text */}
+                  <span className="text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap transition-opacity duration-300 ease-out group-hover:opacity-0">
+                    01
+                  </span>
+
+                  {/* Icon */}
+                  <img
+                    src={assets.mars_icon}
+                    alt="icon"
+                    className="h-10 w-auto absolute left-0 top-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
+                  />
                 </div>
               </div>
             </Link>
