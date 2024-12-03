@@ -48,6 +48,9 @@ html {
   font-weight: 700;
   font-style: normal;
 }
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
 
 /* Custom Reset */
 #root {

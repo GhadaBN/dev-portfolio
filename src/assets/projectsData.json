@@ -2,6 +2,7 @@
   {
     "id": "tomato-social-club",
     "title": "Tomato Social Club",
+    "projectNumber": "01",
     "type": ["Web Development"],
     "description": [
       "Fullstack Web-first application for food delivery built using the MERN stack. The platform provides a seamless and intuitive experience for customers. Integrated Stripe payment processing, ensures secure and efficient transactions."
@@ -23,6 +24,7 @@
   {
     "id": "wallet-app",
     "title": "Mobile Wallet App",
+    "projectNumber": "02",
     "type": ["Web Development"],
     "description": [
       "Developed using React Native for mobile interface development, the app allows users to scroll through their stack of cards, simulating a smooth and interactive experience inspired by the original Apple Wallet. It demonstrates the integration of animated interactions and gesture handling to create a polished and engaging user experience."
@@ -37,6 +39,7 @@
   {
     "id": "dev-roast",
     "title": "Dev Roast",
+    "projectNumber": "03",
     "type": ["Web Development", "Technology Stack"],
     "description": [
       "Dev Roast is an interactive web-first application game survey. It combines the power of React.js, Tailwind CSS, and a dynamic JSON server to deliver a seamless quiz experience."
@@ -54,6 +57,7 @@
   {
     "id": "pour-decisions",
     "title": "Pour Decisions",
+    "projectNumber": "04",
     "type": ["Web Development"],
     "description": [
       "Pour Decisions is a cocktail recipes application built using React.js. With a focus on user-generated content, this application allows you to add your own recipes which you can save to your cocktail collection. The user can also browse through a prexisting collection of recipes. "
@@ -70,6 +74,7 @@
   {
     "id": "fluffy-dog",
     "title": "Fluffy Dog",
+    "projectNumber": "05",
     "type": ["Web Development"],
     "description": [
       "Fluffy Dog is a 2D game web application developed using DOM manipulation techniques and vanilla Javascript. Inspired by the classic Flappy Bird, this game brings a delightful twist with a charming canine protagonist. In Fluffy Dog, players guide the dog through a series of obstacles, aiming to achieve the highest score possible."

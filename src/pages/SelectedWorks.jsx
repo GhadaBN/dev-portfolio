@@ -23,7 +23,7 @@ const SelectedWorks = () => {
 
                   {/* Project Title */}
                   <span
-                    className="inline-block transform transition-all duration-500 ease-out text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap"
+                    className="inline-block transform transition-all duration-500 ease-out text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {project.title}
@@ -31,17 +31,23 @@ const SelectedWorks = () => {
                 </div>
 
                 {/* 01 Text and Icon */}
-                <div className="flex items-center relative">
+                <div className="flex items-center justify-center relative">
                   {/* 01 Text */}
-                  <span className="text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap transition-opacity duration-300 ease-out group-hover:opacity-0">
-                    01
+                  <span
+                    className={`text-center text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap transition-opacity duration-300 ease-out group-hover:opacity-0 ${
+                      project.projectNumber === "01"
+                        ? "pr-1 tracking-widest"
+                        : "tracking-normal"
+                    }`}
+                  >
+                    {project.projectNumber}
                   </span>
 
                   {/* Icon */}
                   <img
                     src={assets.mars_icon}
                     alt="icon"
-                    className="h-10 w-auto absolute left-0 top-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
+                    className="h-10 w-auto absolute opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
                   />
                 </div>
               </div>

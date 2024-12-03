@@ -16,7 +16,7 @@ export default {
       fontSize: {
         customXl: "6.5rem",
         customLg: "6rem",
-        customM: "5.5rem",
+        customM: "4.5rem",
         customS: "1.2rem",
         customSm: "1rem",
       },
@@ -37,7 +37,7 @@ export default {
         17: "4.1rem",
       },
       height: {
-        19: "4.75rem", 
+        19: "4.75rem",
       },
       letterSpacing: {
         xTight: "-0.01em",
@@ -78,6 +78,9 @@ export default {
         900: "900ms",
         1200: "1200ms",
       },
+      fontVariantNumeric: {
+        tabular: "tabular-nums",
+      },
     },
   },
   plugins: [
@@ -89,5 +92,6 @@ export default {
       }, {});
       addUtilities(utilities);
     },
+    require("@tailwindcss/typography"),
   ],
 };
