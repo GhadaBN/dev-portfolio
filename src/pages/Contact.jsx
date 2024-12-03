@@ -11,15 +11,27 @@ const Contact = () => {
 
   return (
     <div className="relative h-auto overflow-hidden flex flex-col">
-      <div className="ml-6 mt-12 w-[90vw]">
-        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
-          <span>Have a project in mind?</span>
+      <div className="ml-8 mt-12 w-[90vw]">
+        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center">
+          <div className="overflow-hidden">
+            <span className="inline-block transform translate-y-full animate-maskReveal delay-100">
+              Have a project in mind?
+            </span>
+          </div>
         </div>
-        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
-          <span>Or want to say hello,</span>
+        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center">
+          <div className="overflow-hidden">
+            <span className="inline-block transform translate-y-full animate-maskReveal delay-200">
+              Or want to say hello,
+            </span>
+          </div>
         </div>
-        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
-          <span>drop me a line.</span>
+        <div className="relative text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center">
+          <div className="overflow-hidden">
+            <span className="inline-block transform translate-y-full animate-maskReveal delay-300">
+              drop me a line.
+            </span>
+          </div>
         </div>
       </div>
       <div className="flex justify-end items-center w-[80vw] mt-10 pr-5">

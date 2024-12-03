@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full h-14 px-6 py-8 mb-8 z-20">
+    <nav className="fixed top-0 left-0 w-full h-14 px-8 py-8 mb-8 z-20">
       <div className="flex items-center justify-between">
         <div className="logo-container">
           <Link to="/">

@@ -16,12 +16,16 @@ export default {
       fontSize: {
         customXl: "6.5rem",
         customLg: "6rem",
+        customM: "5.5rem",
         customS: "1.2rem",
         customSm: "1rem",
       },
       lineHeight: {
         "x-tight": "0.82",
         "tight-0.9": "0.9",
+      },
+      height: {
+        19: "4.75rem",
       },
       colors: {
         customRed: "#FC0230",
