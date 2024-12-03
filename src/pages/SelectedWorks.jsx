@@ -15,18 +15,21 @@ const SelectedWorks = () => {
           >
             <Link
               to={`/projects/${project.id}`}
-              className="flex items-center space-x-1 group relative"
+              className="group flex items-center relative"
             >
-              <span className="relative  flex items-center justify-center">
-                <FiArrowRight className="text-black group-hover:text-white h-20 w-20" />
-              </span>
-              <div className="overflow-hidden">
-                <span
-                  className="inline-block transform translate-y-full animate-maskReveal text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {project.title}
+              <div className="flex items-center group-hover:translate-x-8 transition-all duration-500 ease-out">
+                <span className="relative flex items-center justify-center transform -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                  <FiArrowRight className="text-black h-6 w-6" />
                 </span>
+
+                <div className="overflow-hidden ml-2">
+                  <span
+                    className="inline-block transform translate-y-full animate-maskReveal transition-all duration-500 ease-out text-customLg font-sohne font-book leading-x-tight uppercase whitespace-nowrap"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    {project.title}
+                  </span>
+                </div>
               </div>
             </Link>
           </div>
