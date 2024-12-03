@@ -32,6 +32,9 @@ export default {
       spacing: {
         17: "4.1rem",
       },
+      height: {
+        19: "4.75rem", 
+      },
       letterSpacing: {
         xTight: "-0.01em",
       },
