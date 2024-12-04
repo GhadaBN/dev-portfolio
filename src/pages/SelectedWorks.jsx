@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FiArrowRight } from "react-icons/fi";
+import { MdArrowForward } from "react-icons/md";
 import { assets } from "../assets/assets";
 import projects from "../assets/projectsData.json";
 
@@ -18,7 +18,7 @@ const SelectedWorks = () => {
                 <div className="flex items-center group-hover:translate-x-14 transition-all duration-500 ease-out space-x-2">
                   {/* Arrow */}
                   <span className="relative flex items-center justify-center">
-                    <FiArrowRight className="text-black h-20 w-20 -ml-20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100" />
+                    <MdArrowForward className="text-black h-20 w-20 -ml-20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100" />
                   </span>
 
                   {/* Project Title */}
@@ -45,9 +45,9 @@ const SelectedWorks = () => {
 
                   {/* Icon */}
                   <img
-                    src={assets.mars_icon}
+                    src={project.icon}
                     alt="icon"
-                    className="h-10 w-auto absolute opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
+                    className="h-18 w-auto absolute opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
                   />
                 </div>
               </div>
