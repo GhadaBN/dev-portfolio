@@ -22,32 +22,34 @@ const SelectedWorks = () => {
                   </span>
 
                   {/* Project Title */}
-                  <span
-                    className="inline-block transform transition-all duration-500 ease-out text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {project.title}
-                  </span>
+                  <div className="overflow-hidden">
+                    <span
+                      className="inline-block transform translate-y-full animate-maskReveal transition-all duration-500 ease-out text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap"
+                      style={{ animationDelay: `${index * 0.2}s` }}
+                    >
+                      {project.title}
+                    </span>
+                  </div>
                 </div>
 
-                {/* 01 Text and Icon */}
                 <div className="flex items-center justify-center relative">
-                  {/* 01 Text */}
-                  <span
-                    className={`text-center text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap transition-opacity duration-300 ease-out group-hover:opacity-0 ${
-                      project.projectNumber === "01"
-                        ? "pr-1 tracking-widest"
-                        : "tracking-normal"
-                    }`}
-                  >
-                    {project.projectNumber}
-                  </span>
-
+                  <div className="overflow-hidden">
+                    <span
+                      className={` inline-block transform translate-y-full animate-maskReveal text-center text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap transition-opacity duration-300 ease-out group-hover:opacity-0 ${
+                        project.projectNumber === "01"
+                          ? "pr-1 tracking-widest"
+                          : "tracking-normal"
+                      }`}
+                      style={{ animationDelay: `${index * 0.2}s` }}
+                    >
+                      {project.projectNumber}
+                    </span>
+                  </div>
                   {/* Icon */}
                   <img
                     src={project.icon}
                     alt="icon"
-                    className="h-18 w-auto absolute opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
+                    className="max-h-20 max-w-full absolute opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"
                   />
                 </div>
               </div>
