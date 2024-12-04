@@ -26,7 +26,7 @@
     "id": "wallet-app",
     "title": "Mobile Wallet App",
     "projectNumber": "02",
-    "icon": "/arrow_icon.png",
+    "icon": "/wallet_icon.png",
     "type": ["Web Development"],
     "description": [
       "Developed using React Native for mobile interface development, the app allows users to scroll through their stack of cards, simulating a smooth and interactive experience inspired by the original Apple Wallet. It demonstrates the integration of animated interactions and gesture handling to create a polished and engaging user experience."
