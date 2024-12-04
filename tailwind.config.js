@@ -16,7 +16,8 @@ export default {
       fontSize: {
         customXl: "6.5rem",
         customLg: "6rem",
-        customM: "4.5rem",
+        customM: "4.8rem",
+        customXm: "4rem",
         customS: "1.2rem",
         customSm: "1rem",
       },
@@ -24,9 +25,7 @@ export default {
         "x-tight": "0.82",
         "tight-0.9": "0.9",
       },
-      height: {
-        19: "4.75rem",
-      },
+
       colors: {
         customRed: "#FC0230",
         customBeige: "#EAE4D3",
@@ -38,6 +37,11 @@ export default {
       },
       height: {
         19: "4.75rem",
+        18: "4.5rem",
+      },
+      width: {
+        19: "4.75rem",
+        18: "4.5rem",
       },
       letterSpacing: {
         xTight: "-0.01em",
