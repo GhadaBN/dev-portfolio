@@ -25,7 +25,7 @@ const SelectedWorks = () => {
                   <div className="overflow-hidden">
                     <span
                       className="inline-block transform translate-y-full animate-maskReveal transition-all duration-500 ease-out text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap"
-                      style={{ animationDelay: `${index * 0.2}s` }}
+                      style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       {project.title}
                     </span>
@@ -37,7 +37,7 @@ const SelectedWorks = () => {
                     <span
                       className={` inline-block transform translate-y-full animate-maskReveal text-center text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap transition-opacity duration-300 ease-out group-hover:opacity-0 ${
                         project.projectNumber === "01"
-                          ? "pr-1 tracking-widest"
+                          ? "pr-1 tracking-[0.11em]"
                           : "tracking-normal"
                       }`}
                       style={{ animationDelay: `${index * 0.2}s` }}

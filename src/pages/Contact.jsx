@@ -36,11 +36,13 @@ const Contact = () => {
       </div>
       <div className="flex justify-end items-center w-[80vw] mt-10 pr-5">
         <div className="flex mt-10 items-start space-x-10">
-          <div className="font-sohneBreit font-normal text-customSm uppercase text-left">
-            <span>Contact</span>
+          <div className="overflow-hidden">
+            <div className="font-sohneBreit font-normal text-customSm uppercase text-left transform translate-x-full animate-leftReveal delay-600">
+              <span className="">Contact</span>
+            </div>
           </div>
-          <div className="flex flex-col space-y-2">
-            <div className="flex w-[8vw] justify-between items-center">
+          <div className="flex flex-col space-y-2 overflow-hidden">
+            <div className="flex w-[8vw] justify-between items-center transform translate-x-full animate-leftReveal delay-1200">
               <a
                 href={"https://www.linkedin.com/in/ghadabennasr/"}
                 target="_blank"
@@ -56,7 +58,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="flex w-[8vw] justify-between items-center">
+            <div className="flex w-[8vw] justify-between items-center transform translate-x-full animate-leftReveal delay-1200">
               <a
                 href="#"
                 onClick={obfuscateEmail}
@@ -71,7 +73,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="flex w-[8vw] justify-between items-center">
+            <div className="flex w-[8vw] justify-between items-center transform translate-x-full animate-leftReveal delay-1200">
               <a
                 href={"https://github.com/GhadaBN"}
                 target="_blank"
