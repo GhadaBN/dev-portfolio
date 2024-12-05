@@ -31,7 +31,7 @@ export default {
         customBeige: "#EAE4D3",
         customBg: "#FBFBF6",
         customPink: "#FF9FEA",
-        customGrey: "#888",
+        customGrey: "#505050",
       },
       spacing: {
         17: "4.1rem",

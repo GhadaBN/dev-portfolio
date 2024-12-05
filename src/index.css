@@ -49,7 +49,6 @@ html {
   font-style: normal;
 }
 
-
 /* Custom Reset */
 #root {
   all: unset;
@@ -85,7 +84,6 @@ html {
 
 body {
   background-color: #fefefc;
-  color: black;
   margin: 0;
   padding: 0;
 }

@@ -7,7 +7,7 @@ import projects from "../assets/projectsData.json";
 const SelectedWorks = () => {
   return (
     <div className="selected-works-page-wrapper relative h-[calc(90vh-9vh)] overflow-hidden">
-      <div className="absolute bottom-12 left-8 flex flex-col items-start text-left w-[95vw]">
+      <div className="absolute bottom-12 left-8 flex flex-col items-start text-left w-[90vw]">
         {projects.map((project, index) => (
           <div key={project.id} className="relative flex items-center">
             <Link
