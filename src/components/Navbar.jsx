@@ -23,9 +23,9 @@ const Navbar = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
-      className={`fixed top-0 left-1/2 transform -translate-x-1/2 max-w-[95%] w-full my-6 z-20 transition-all duration-300 ${
+      className={`fixed top-0 left-1/2 transform -translate-x-1/2 max-w-[96%] w-full my-6 z-20 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#FBFBF6] bg-opacity-100 rounded-full shadow-sm  py-2 px-8"
+          ? "bg-[#FBFBF6] bg-opacity-100 rounded-full shadow-sm  py-2 px-8 "
           : "bg-transparent rounded-none shadow-none text-black"
       }`}
     >
@@ -40,11 +40,12 @@ const Navbar = () => {
           <Link
             to="/selected-works"
             onClick={() => setActiveTab("/selected-works")}
-            className={`nav-link uppercase font-sohneBreit font-semibold text-sm text-inherit ${
-              activeTab === "/selected-works" ? "text-customGrey" : "text-black"
-            }`}
+            className="nav-link flex items-center space-x-2 uppercase font-sohneBreit text-black font-semibold text-sm"
           >
-            selected works
+            {activeTab === "/selected-works" && (
+              <span className="h-3 w-3 rounded-full border border-black bg-customRed"></span>
+            )}
+            <span>selected works</span>
           </Link>
         </div>
 
@@ -52,20 +53,22 @@ const Navbar = () => {
           <Link
             to="/about"
             onClick={() => setActiveTab("/about")}
-            className={`nav-link uppercase font-sohneBreit text-inherit font-semibold text-sm ${
-              activeTab === "/about" ? "text-customGrey" : "text-black"
-            }`}
+            className="nav-link flex items-center space-x-2 uppercase font-sohneBreit text-black font-semibold text-sm"
           >
-            About
+            {activeTab === "/about" && (
+              <span className="h-3 w-3 rounded-full border border-black bg-customRed"></span>
+            )}
+            <span>About</span>
           </Link>
           <Link
             onClick={() => setActiveTab("/contact")}
             to="/contact"
-            className={`nav-link uppercase font-sohneBreit text-inherit font-semibold text-sm ${
-              activeTab === "/contact" ? "text-customGrey" : "text-black"
-            }`}
+            className="nav-link flex items-center space-x-2 uppercase font-sohneBreit text-black font-semibold text-sm"
           >
-            Contact
+            {activeTab === "/contact" && (
+              <span className="h-3 w-3 rounded-full border border-black bg-customRed"></span>
+            )}
+            <span>Contact</span>
           </Link>
         </div>
       </div>
