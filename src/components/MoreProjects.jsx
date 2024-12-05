@@ -11,7 +11,7 @@ const MoreProjects = ({ currentProjectId, projects }) => {
     <div className="more-projects-wrapper relative mt-16 left-8 text-left">
       <div className="overflow-hidden flex items-center mb-8 space-x-2">
         <span className="inline-block h-4 w-4 rounded-full border border-black bg-customBeige group-hover:bg-customRed"></span>
-        <h2 className="inline-block transform translate-y-full animate-maskReveal transition-all duration-500 ease-out text-customSm font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap">
+        <h2 className="inline-block transform translate-y-full animate-maskReveal transition-all duration-500 ease-out text-customSm font-sohneBreit font-normal leading-x-tight uppercase whitespace-nowrap">
           More Projects
         </h2>
       </div>
