@@ -16,7 +16,7 @@ export default {
       fontSize: {
         customXl: "6.5rem",
         customLg: "6rem",
-        customM: "4.8rem",
+        customM: "4.4rem",
         customXm: "4rem",
         customS: "1.2rem",
         customSm: "1rem",

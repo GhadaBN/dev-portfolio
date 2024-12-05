@@ -8,10 +8,10 @@ const ProjectHeader = ({ title, description, technology, demo }) => {
   };
 
   return (
-    <div className="lg: max-w-screen-lg my-16 mx-auto p-6">
-      <div className="w-[80vw] mx-auto">
+    <div className="lg: max-w-screen-lg my-16 mx-auto py-6">
+      <div className="w-[80vw]">
         <div className="w-[60%] mt-6 mb-16">
-          <h1 className="text-left py-10 text-customXl font-sohne font-book leading-tight-0.9 uppercase">
+          <h1 className="text-left py-10 inline-block text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap transform translate-y-full animate-maskReveal transition-all duration-500 ease-out">
             {title}
           </h1>
         </div>
