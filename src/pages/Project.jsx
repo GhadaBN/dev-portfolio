@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import projects from "../assets/projectsData.json";
 import ProjectHeader from "../components/ProjectHeader";
 import Boards from "../components/Boards";
+import MoreProjects from "../components/MoreProjects";
 const Project = () => {
   const { projectId } = useParams();
 
@@ -21,6 +22,7 @@ const Project = () => {
         demo={project.demo}
       />
       <Boards projectBoards={project.projectBoards} />
+      <MoreProjects currentProjectId={projectId} projects={projects} />
     </div>
   );
 };
