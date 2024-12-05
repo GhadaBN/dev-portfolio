@@ -10,14 +10,14 @@ const ProjectHeader = ({ title, description, technology, demo }) => {
   return (
     <div className="lg: max-w-screen-lg my-16 mx-auto py-6">
       <div className="w-[80vw]">
-        <div className="w-[60%] mt-6 mb-16">
-          <h1 className="text-left py-10 inline-block text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap transform translate-y-full animate-maskReveal transition-all duration-500 ease-out">
+        <div className="w-[100%] mt-6 mb-16 text-left overflow-hidden">
+          <h1 className="py-10 inline-block text-customM font-sohneBreit font-book leading-x-tight uppercase whitespace-nowrap transform translate-y-full animate-maskReveal delay-200">
             {title}
           </h1>
         </div>
-        <div className="w-[80%] flex space-x-10">
-          <div className="w-[30%]">
-            <h2 className="text-customSm font-sohneBreit font-normal uppercase text-left border-b border-black px-2 py-2 mb-1 my-1">
+        <div className="w-[85%] flex space-x-10">
+          <div className="w-[40%]">
+            <h2 className="text-customSm font-sohneBreit font-normal uppercase text-left border-b border-black px-2 py-2 my-1">
               Technology Stack
             </h2>
             <div>
@@ -67,7 +67,7 @@ const ProjectHeader = ({ title, description, technology, demo }) => {
             </div>
           </div>
 
-          <div className="w-[50%]">
+          <div className="w-[45%]">
             {demo?.map((link, index) => (
               <div key={index} className="border-b border-black px-2 py-2 my-1">
                 <a
