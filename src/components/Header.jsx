@@ -5,8 +5,8 @@ import { assets } from "../assets/assets";
 
 const Header = () => {
   return (
-    <header className="absolute bottom-8 left-8 w-[90vw]">
-      <div className="relative text-customXl font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
+    <header className="absolute bottom-8 left-8 w-[90vw] md:bottom-16 md:left-16 lg:bottom-20 lg:left-20">
+      <div className="relative text-5xl md:text-7xl lg:text-customXl font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
         <div className="overflow-hidden">
           <span className="inline-block transform translate-y-full animate-maskReveal">
             GHADA
@@ -34,8 +34,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="relative text-customXl font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
-        <div className="overflow-hidden relative mb-10">
+      <div className="relative text-5xl md:text-7xl lg:text-customXl font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
+        <div className="hidden lg:block overflow-hidden relative mb-10">
           <a
             href={"https://github.com/GhadaBN"}
             target="_blank"
@@ -57,9 +57,9 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <div className="text-customXl font-sohne leading-x-tight font-book uppercase">
+      <div className="text-5xl md:text-7xl lg:text-customXl font-sohne leading-x-tight font-book uppercase">
         <div className="flex items-center overflow-hidden">
-          <span className="relative text-customXl -top-3 inline-block transform translate-y-full animate-maskReveal delay-1200">
+          <span className="relative text-5xl md:text-7xl lg:text-customXl -top-3 inline-block transform translate-y-full animate-maskReveal delay-1200">
             +
           </span>
           <span className="ml-2 inline-block transform translate-y-full animate-maskReveal delay-700">
@@ -68,7 +68,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex items-center text-customXl leading-x-tight font-sohne font-book uppercase whitespace-nowrap overflow-hidden">
-        <span className="inline-block transform translate-y-full animate-maskReveal delay-800">
+        <span className="text-5xl md:text-7xl lg:text-customXl inline-block transform translate-y-full animate-maskReveal delay-800">
           BASED IN BERLIN
         </span>
         <div className="overflow-hidden ml-4">

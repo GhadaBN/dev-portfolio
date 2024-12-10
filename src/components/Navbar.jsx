@@ -71,8 +71,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        //Small Screen responsive Navbar //
-        
         <div className="lg:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
