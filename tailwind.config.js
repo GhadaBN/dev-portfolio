@@ -14,7 +14,7 @@ export default {
         bold: 700,
       },
       fontSize: {
-        customXl: "6.5rem",
+        customXl: ["6.5rem", { lineHeight: "0.82" }],
         customLg: "6rem",
         customM: "4.4rem",
         customXm: "4rem",
