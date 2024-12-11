@@ -6,48 +6,48 @@ import { assets } from "../assets/assets";
 const Header = () => {
   return (
     <header className="absolute bottom-8 left-8 w-[90vw]">
-      <div className="relative text-customXl font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
+      <div className="relative flex items-center space-x-2 text-4xl uppercase md:text-7xl lg:text-customXl font-sohne font-book leading-x-tight whitespace-nowrap">
         <div className="overflow-hidden">
           <span className="inline-block transform translate-y-full animate-maskReveal">
             GHADA
           </span>
         </div>
 
-        <div className="overflow-hidden flex items-center justify-center">
-          <span className="w-60 bg-customBeige h-19 transform translate-x-full animate-leftReveal"></span>
+        <div className="flex items-center justify-center overflow-hidden">
+          <span className="hidden transform translate-x-full md:block w-60 bg-customBeige h-19 animate-leftReveal"></span>
         </div>
         <div className="overflow-hidden">
-          <span className="inline-block transform translate-y-full animate-maskReveal delay-500">
+          <span className="inline-block delay-500 transform translate-y-full animate-maskReveal">
             BENNASR
           </span>
         </div>
-        <div className="overflow-hidden relative mb-10">
+        <div className="relative hidden mb-10 overflow-hidden md:block">
           <Link
             to="/about"
-            className="flex items-center space-x-1 group relative transform translate-y-full animate-maskReveal delay-500"
+            className="relative flex items-center space-x-1 delay-500 transform translate-y-full group animate-maskReveal"
           >
-            <span className="h-4 w-4 rounded-full border border-black bg-customBeige group-hover:bg-customRed"></span>
-            <span className="font-sohneBreit font-semibold text-customSm uppercase">
+            <span className="w-4 h-4 border border-black rounded-full bg-customBeige group-hover:bg-customRed"></span>
+            <span className="font-semibold uppercase font-sohneBreit text-customSm">
               About
             </span>
           </Link>
         </div>
       </div>
 
-      <div className="relative text-customXl font-sohne font-book leading-x-tight uppercase whitespace-nowrap flex items-center space-x-2">
-        <div className="overflow-hidden relative mb-10">
+      <div className="relative flex items-center space-x-2 text-4xl uppercase md:text-7xl lg:text-customXl font-sohne font-book leading-x-tight whitespace-nowrap">
+        <div className="relative hidden mb-10 overflow-hidden md:block lg:block">
           <a
             href={"https://github.com/GhadaBN"}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-1 group ml-2 relative transform translate-y-full animate-maskReveal delay-600"
+            className="relative flex items-center ml-2 space-x-1 transform translate-y-full group animate-maskReveal delay-600"
           >
-            <span className="font-sohneBreit font-semibold text-customSm uppercase">
+            <span className="font-semibold uppercase font-sohneBreit text-customSm">
               GITHUB
             </span>
-            <span className="relative h-4 w-4 rounded-full border border-black bg-customBeige group-hover:bg-customRed flex items-center justify-center">
+            <span className="relative flex items-center justify-center w-4 h-4 border border-black rounded-full bg-customBeige group-hover:bg-customRed">
               {" "}
-              <FiArrowUpRight className="text-black group-hover:text-white h-3 w-3" />
+              <FiArrowUpRight className="w-3 h-3 text-black group-hover:text-white" />
             </span>
           </a>
         </div>
@@ -57,25 +57,25 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <div className="text-customXl font-sohne leading-x-tight font-book uppercase">
+      <div className="text-4xl uppercase md:text-7xl lg:text-customXl font-sohne leading-x-tight font-book">
         <div className="flex items-center overflow-hidden">
-          <span className="relative text-customXl -top-3 inline-block transform translate-y-full animate-maskReveal delay-1200">
+          <span className="relative inline-block transform translate-y-full md:-top-3 animate-maskReveal delay-1200">
             +
           </span>
-          <span className="ml-2 inline-block transform translate-y-full animate-maskReveal delay-700">
+          <span className="inline-block ml-2 delay-700 transform translate-y-full animate-maskReveal">
             VISUAL DESIGNER
           </span>
         </div>
       </div>
-      <div className="flex items-center text-customXl leading-x-tight font-sohne font-book uppercase whitespace-nowrap overflow-hidden">
+      <div className="flex items-center space-x-2 overflow-hidden text-4xl uppercase md:text-7xl lg:text-customXl leading-x-tight font-sohne font-book whitespace-nowrap">
         <span className="inline-block transform translate-y-full animate-maskReveal delay-800">
           BASED IN BERLIN
         </span>
-        <div className="overflow-hidden ml-4">
+        <div className="overflow-hidden">
           <img
             src={assets.mars_icon}
             alt="icon"
-            className="h-19 w-auto transform translate-y-full animate-maskReveal delay-1200"
+            className="w-auto transform translate-y-full sm:h-4 md:h-14 lg:h-19 animate-maskReveal delay-1200"
           />
         </div>
       </div>
