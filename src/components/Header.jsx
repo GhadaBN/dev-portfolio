@@ -5,7 +5,7 @@ import { assets } from "../assets/assets";
 
 const Header = () => {
   return (
-    <header className="absolute bottom-8 left-8 w-[90vw]">
+    <header className="absolute bottom-12 md:bottom-8 left-2 md:left-8 w-[90vw]">
       <div className="relative flex items-center space-x-2 text-4xl uppercase md:text-7xl lg:text-customXl font-sohne font-book leading-x-tight whitespace-nowrap">
         <div className="overflow-hidden">
           <span className="inline-block transform translate-y-full animate-maskReveal">
@@ -35,7 +35,7 @@ const Header = () => {
       </div>
 
       <div className="relative flex items-center space-x-2 text-4xl uppercase md:text-7xl lg:text-customXl font-sohne font-book leading-x-tight whitespace-nowrap">
-        <div className="relative hidden mb-10 overflow-hidden md:block lg:block">
+        <div className="relative hidden mb-10 overflow-hidden md:block">
           <a
             href={"https://github.com/GhadaBN"}
             target="_blank"
@@ -51,7 +51,7 @@ const Header = () => {
             </span>
           </a>
         </div>
-        <div className="overflow-hidden">
+        <div className="ml-0 overflow-hidden md:ml-2n">
           <span className="inline-block transform translate-y-full animate-maskReveal delay-600">
             CREATIVE DEVELOPER
           </span>
@@ -75,7 +75,7 @@ const Header = () => {
           <img
             src={assets.mars_icon}
             alt="icon"
-            className="w-auto transform translate-y-full sm:h-4 md:h-14 lg:h-19 animate-maskReveal delay-1200"
+            className="w-auto transform translate-y-full sm:h-4 md:h-9 lg:h-19 animate-maskReveal delay-1200"
           />
         </div>
       </div>
