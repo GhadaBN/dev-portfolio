@@ -67,7 +67,7 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <div className="flex items-center space-x-2 overflow-hidden text-4xl uppercase md:text-7xl lg:text-customXl leading-x-tight font-sohne font-book whitespace-nowrap">
+      <div className="flex items-center space-x-3 overflow-hidden text-4xl uppercase md:text-7xl lg:text-customXl leading-x-tight font-sohne font-book whitespace-nowrap">
         <span className="inline-block transform translate-y-full animate-maskReveal delay-800">
           BASED IN BERLIN
         </span>
