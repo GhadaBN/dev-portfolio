@@ -17,8 +17,9 @@ export default {
         customXl: ["6.5rem", { lineHeight: "0.82" }],
         customLg: "6rem",
         customM: "4.4rem",
-        customXm: "4rem",
-        customS: "1.2rem",
+        customXm: ["4rem", { lineHeight: "0.82" }],
+        customRs: ["2.2rem", { lineHeight: "0.82" }],
+        customS: ["1.2rem", { lineHeight: "0.82" }],
         customSm: "1rem",
       },
       lineHeight: {
@@ -39,6 +40,8 @@ export default {
       height: {
         19: "4.75rem",
         18: "4.5rem",
+        customM: "3.5rem",
+        customS: "1.9rem",
       },
       width: {
         19: "4.75rem",
