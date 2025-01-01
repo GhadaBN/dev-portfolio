@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const NotFound = () => {
   return (
-    <div>
-      
+    <div className="relative h-[calc(90vh-9vh)] sm:overflow-hidden md:overflow-hidden">
+      not found
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;
