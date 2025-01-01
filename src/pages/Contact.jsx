@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="flex justify-end items-center w-[80vw] mt-10 pr-5">
         <div className="flex mt-10 items-start space-x-10">
           <div className="overflow-hidden">
-            <div className="font-sohneBreit font-normal text-customSm uppercase text-left transform translate-x-full animate-leftReveal delay-600">
+            <div className="font-sohneBreit font-normal text-customSm uppercase text-left transform translate-y-full animate-maskReveal delay-600">
               <span className="">Contact</span>
             </div>
           </div>
